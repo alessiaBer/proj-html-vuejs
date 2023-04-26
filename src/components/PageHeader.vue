@@ -30,6 +30,7 @@ export default {
         </nav>
       </div>
     </div>
+    <!-- /.nav-banner -->
     <div class="nav-menu">
       <nav>
         <ul>
@@ -37,6 +38,7 @@ export default {
         </ul>
       </nav>
     </div>
+    <!-- /.nav-menu -->
   </header>
 </template>
 
