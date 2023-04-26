@@ -1,6 +1,12 @@
 <script>
+import menu from "../data/menu";
 export default {
   name: "PageHeader",
+  data() {
+    return {
+      menu,
+    };
+  },
 };
 </script>
 <template>
@@ -15,7 +21,10 @@ export default {
           />
           <div class="input-group">
             <span class="input-group-text" id="basic-addon1">
-              <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="icon"/>
+              <font-awesome-icon
+                icon="fa-solid fa-magnifying-glass"
+                class="icon"
+              />
             </span>
             <input type="text" class="form-control" placeholder="Search..." />
           </div>
@@ -24,19 +33,24 @@ export default {
           </div>
           <div class="personal-area d-flex">
             <!-- TODO correggere icone -->
-            <font-awesome-icon icon="fa-solid fa-box" class="icon"/>
-            <font-awesome-icon icon="fa-regular fa-user" class="icon"/>
+            <font-awesome-icon icon="fa-solid fa-box" class="icon" />
+            <font-awesome-icon icon="fa-regular fa-user" class="icon" />
           </div>
         </nav>
       </div>
     </div>
     <!-- /.nav-banner -->
     <div class="nav-menu">
-      <nav>
-        <ul>
-          <li></li>
-        </ul>
-      </nav>
+      <div class="my_container">
+        <nav class="navbar">
+          <ul>
+            <li v-for="item in menu" :class="item.active === true ? 'active' : ''">
+                {{ item.name }}
+                <font-awesome-icon icon="fa-solid fa-chevron-down" v-if="item.dropdown === true" class="icon"/>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <!-- /.nav-menu -->
   </header>

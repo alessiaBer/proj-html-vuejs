@@ -1,7 +1,7 @@
 @use "./variables" as *;
 
 .nav-banner {
-    justify-content: space-between;
+  justify-content: space-between;
   .logo {
     height: 20px;
   }
@@ -12,10 +12,10 @@
       border: none;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
-      padding-right: 0;
+      padding-right: 0.1rem;
       font-size: 0.8rem;
       .icon {
-        color: grey;
+        color: $neutral;
       }
     }
     input {
@@ -26,12 +26,35 @@
       background-color: $light;
     }
   }
-  .support{
+  .support {
     font-size: 0.8rem;
   }
   .personal-area {
     .icon {
-        padding-left: 0.8rem;
+      padding-left: 0.8rem;
+    }
+  }
+}
+
+.nav-menu {
+  .my_container {
+    display: flex;
+    justify-content: center;
+    ul {
+      list-style: none;
+      display: flex;
+      font-size: 0.8rem;
+      font-weight: 500;
+      li {
+        padding: 0 0.8rem;
+        color: $dark;
+        &:not(.active) {
+            color: $neutral;
+        }
+        .icon {
+            font-size: 0.6rem;
+        }
+      }
     }
   }
 }
