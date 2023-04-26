@@ -14,16 +14,31 @@ export default {
 <template>
   <footer>
     <div class="footer-top">
-      <div class="my-container">
+      <div class="my_container">
         <div class="row row-cols-4">
-          <div class="col"></div>
+          <div class="col">
+            <img class="logo" src="../assets/img/images/mobile-light-pet-logo-2x-200x52.png" alt="Avada Pet Supplies">
+            <div class="address-contacts">
+                <!-- TODO anche questo contenuto dinamicamente?-->
+                <ul>
+                    <li>1234 Avada Avenue Avadaville</li>
+                    <li>info@your-company.com</li>
+                    <li>Call us: (1) 234 5678</li>
+                </ul>
+            </div>
+          </div>
           <div class="col" v-for="list in menu">
             <h5>{{ list.name }}</h5>
-            <ul>
+            <ul class="menu">
               <li v-for="item in list.items">{{ item }}</li>
             </ul>
           </div>
-          <div class="col"></div>
+          <div class="col">
+            <div class="my_card">
+                <h5>Subscribe to our newsletter</h5>
+                
+            </div>
+          </div>
         </div>
         <div class="footer-nav">
             <ul>
