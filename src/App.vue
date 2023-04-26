@@ -1,8 +1,14 @@
 <script>
+import PageHeader from './components/PageHeader.vue';
+export default {
+  components: {
+    PageHeader
+  }
+}
 </script>
 
 <template>
-  <h1>Hello</h1>
+  <PageHeader />
 </template>
 
 <style scoped>

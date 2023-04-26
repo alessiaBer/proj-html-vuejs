@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+.nav-banner {
+    justify-content: space-between;
+  .logo {
+    height: 20px;
+  }
+  .input-group {
+    width: 30%;
+    span {
+      background-color: $light;
+      border: none;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      padding-right: 0;
+      font-size: 0.8rem;
+      .icon {
+        color: grey;
+      }
+    }
+    input {
+      font-size: 0.8rem;
+      border: none;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      background-color: $light;
+    }
+  }
+  .support{
+    font-size: 0.8rem;
+  }
+  .personal-area {
+    .icon {
+        padding-left: 0.8rem;
+    }
+  }
+}
