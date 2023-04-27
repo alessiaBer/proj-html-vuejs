@@ -18,10 +18,11 @@ Riprodurre un sito di forniture per animali
 ---Durante il refactoring si deciderà se fare un componente dedicato per ogni parte sia del footer che dell'header--
 6) Creare il Main ed importare il Main
    6a) Creo,popolo e stilizzo il componente JumboTron e lo importo nel PageMain
-   6b) Essendo il resto del PageMain costituito da molte sezioni, creo staticamente le sezioni e solo durante il refactoring si decido se creare più componenti e quali si possono raggruppare
+   6b) Essendo il resto del PageMain costituito da molte sezioni, creo staticamente le sezioni e solo durante il refactoring decido se creare più componenti e quali si possono raggruppare
 
 **USEFUL DOCUMENTATION:** 
 fontawesome: 'https://fontawesome.com/docs/web/use-with/vue/' ; 
              'https://fontawesome.com/v6/docs/web/use-with/vue/add-icons'
 
-fontsource: 'https://fontsource.org/docs/getting-started'
+fontsource: 'https://fontsource.org/docs/getting-started';
+            'https://www.npmjs.com/package/@fontsource/work-sans'
