@@ -36,7 +36,8 @@ export default {
           <div class="col">
             <div class="my_card">
                 <h5>Subscribe to our newsletter</h5>
-                
+                <input type="text" placeholder="Insert your email...*">
+                <button class="btn btn-dark">Subscribe</button>
             </div>
           </div>
         </div>
@@ -54,6 +55,11 @@ export default {
             </ul>
         </div>
       </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="my_container">
+            <span>&copy; Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by Alessia B.</span>
+        </div>
     </div>
   </footer>
 </template>
