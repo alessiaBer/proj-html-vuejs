@@ -29,6 +29,7 @@ footer {
   .my_card {
     background-color: $secondary-banner;
     background-image: url('https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png');
+    background-size: contain;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
