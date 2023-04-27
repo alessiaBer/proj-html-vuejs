@@ -10,6 +10,10 @@ body {
     margin: 0 auto;
 }
 
+h1, h2, h3 {
+    font-family: 'Trocchi', serif;
+}
+
 ul {
     list-style: none;
 }
@@ -19,6 +23,11 @@ ul {
     &:hover {
         color: $primary;
     }
+}
+
+.link_primary {
+    color: $primary;
+    text-decoration: none;
 }
 
 .link_dark {
@@ -37,4 +46,8 @@ ul {
     &:hover {
         background-color: $secondary-button;
     }
+}
+
+.btn_secondary {
+    background-color: $secondary-button;
 }

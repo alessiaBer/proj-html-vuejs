@@ -1,5 +1,5 @@
 <script>
-import { categories } from "../data/main";
+import { categories, dogFood } from "../data/main";
 import JumboTron from "./JumboTron.vue";
 export default {
   name: "PageMain",
@@ -9,6 +9,7 @@ export default {
   data() {
     return {
       categories,
+      dogFood
     };
   },
 };
@@ -16,22 +17,41 @@ export default {
 <template>
   <main>
     <JumboTron />
-    <section>
+    <section class="browse">
       <div class="my_container">
-        <h3>Browse by category</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum
-          iusto adipisci eaque consectetur molestias voluptatibus illum
-          similique? Nostrum, et.
-        </p>
-        <div class="row row-cols-4">
-          <div class="col" v-for="category in categories">
-            <div class="my_card">
-              <img
-                :src="'../assets/img/images/' + category.img"
-                :alt="category.name"
-              />
-              <span>{{ category.name }} ({{ category.amount }})</span>
+        <div class="categories text-center">
+          <h3>Browse by category</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            cum iusto adipisci eaque consectetur molestias voluptatibus illum
+            similique? Nostrum, et.
+          </p>
+          <div class="row row-cols-4">
+            <div class="col" v-for="category in categories">
+              <div class="my_card">
+                <div class="category_card_img">
+                  <img :src="category.img" :alt="category.name" />
+                </div>
+                <span class="d-block py-3">{{ category.name }} ({{ category.amount }})</span>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-3">
+            <div class="col" v-for="food in dogFood">
+              <div class="my_card">
+                <div class="title">
+                  <h3>{{ food.name }}</h3>
+                  <span>{{ food.description }}</span>
+                </div>
+                <div class="card_img">
+                  <img :src="food.img" :alt="food.name">
+                </div>
+                <button class="btn btn_secondary">
+                  <a href="#" class="link_primary">
+                    Shop {{ food.type.toLowerCase() }}
+                  </a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
