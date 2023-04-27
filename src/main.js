@@ -11,10 +11,15 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faMap } from '@fortawesome/free-regular-svg-icons'
+import { faClock } from '@fortawesome/free-regular-svg-icons'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 /* fontsource */
+import '@fontsource/work-sans/300.css'
 import '@fontsource/work-sans/400.css'
 import '@fontsource/work-sans/500.css'
+import '@fontsource/trocchi/400.css'
 import App from './App.vue'
 
-library.add(faMagnifyingGlass, faUser, faBox, faChevronDown, faFacebookF, faTwitter, faInstagram, faYoutube)
+library.add(faMagnifyingGlass, faUser, faBox, faChevronDown, faFacebookF, faTwitter, faInstagram, faYoutube, faMap, faClock, faCheck)
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
