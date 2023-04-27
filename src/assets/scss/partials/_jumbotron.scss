@@ -1,0 +1,77 @@
+@use "./variables" as *;
+
+.jumbotron {
+  height: 700px;
+  color: $primary;
+  .banner-top {
+    background-color: $secondary;
+    height: 50px;
+    .my_container {
+      display: flex;
+      padding: 1rem 3.5rem;
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.7rem;
+        font-weight: 300;
+        padding: 0;
+        margin: 0;
+        li {
+          .icon {
+            padding-right: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+  .jumbo-main {
+    background-image: url('https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/banner-5@2x-scaled.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100% - 150px);
+    .my_container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .text {
+            width: 50%;
+            span {
+                font-size: 0.7rem;
+                font-weight: 500;
+                letter-spacing: 0.1rem;
+            }
+           h1 {
+            font-family: 'Trocchi', serif;
+            font-size: 2.2rem;
+            line-height: 3rem;
+            padding: 2rem 0;
+        } 
+        }
+    }
+    
+  }
+  .banner-bottom {
+    background-color: $secondary;
+    background-image: url('https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png');
+    background-repeat: repeat;
+    padding-top: 1.3rem;
+    height: 100px;
+    .my_container {
+        display: flex;
+        justify-content: center;
+        font-size: 0.75rem;
+        img {
+            width: 15%;
+            align-self: flex-end;
+        }
+        .text {
+            align-self: center;
+            font-weight: 300;
+            span {
+                padding: 0 1rem;
+            }
+        }
+    }
+  }
+}
