@@ -2,6 +2,7 @@
 
 .nav-banner {
   justify-content: space-between;
+  height: 50px;
   .logo {
     height: 25px;
   }
@@ -43,6 +44,7 @@
     justify-content: center;
     nav {
       padding: 1rem 0;
+      height: 49px;
       ul {
         display: flex;
         font-size: 0.8rem;
