@@ -91,7 +91,7 @@
     background-color: $secondary;
     text-align: center;
     color: $primary;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
     h2 {
         padding: 5rem 0 4.3rem 0;
         background-image: url('https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png');
@@ -114,6 +114,51 @@
         span {
             color: $light;
             font-size: 0.8rem;
+        }
+    }
+}
+
+.newsletter {
+    .newsletter_submit {
+        .my_container {
+            background-image: url('/src/assets/img/images/banner-7-2x-scaled.jpg');
+            background-size: cover;
+            padding: 4rem 0 6rem 3rem;
+            margin-top: -2.5rem;
+            .text {
+                width: 55%;
+                h2 {
+                    color: $secondary;
+                }
+                .input_group {
+                    width: 100%;
+                    input {
+                        padding: 0.65rem 0 0.65rem 1rem;
+                        border: none;
+                        border-radius: 20px;
+                        margin-bottom: 1rem;
+                        background-color: $lighter;
+                        color: $darker;
+                        width: 65%;
+                    }
+                    .button_el {
+                        width: 32%;
+                    }
+                    button {
+                        background-color: $secondary-button;
+                        border: none;
+                        border-radius: 20px;
+                        font-size: 0.9rem;
+                        padding: 0.65rem 1rem ;
+                        font-weight: 500;
+                        width: 100%;
+                        &:hover {
+                            background-color: $secondary;
+                        }
+                    }
+                }
+                
+            }
         }
     }
 }

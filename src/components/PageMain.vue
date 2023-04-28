@@ -1,6 +1,6 @@
 <script>
 import { categories, dogFood, bestSellers } from "../data/products";
-import { userTestimonials } from '../data/testimonials'
+import { userTestimonials } from "../data/testimonials";
 import JumboTron from "./JumboTron.vue";
 export default {
   name: "PageMain",
@@ -12,7 +12,7 @@ export default {
       categories,
       dogFood,
       bestSellers,
-      userTestimonials
+      userTestimonials,
     };
   },
 };
@@ -108,6 +108,7 @@ export default {
         </div>
       </div>
     </section>
+    <!-- /.browse section-->
     <section class="testimonials">
       <h2>Users testimonials</h2>
       <div class="my_container">
@@ -115,17 +116,40 @@ export default {
           <div class="col" v-for="testimonial in userTestimonials">
             <div class="my_card">
               <div class="card_img">
-                <img :src="testimonial.avatar" :alt="testimonial.user">
+                <img :src="testimonial.avatar" :alt="testimonial.user" />
               </div>
               <div class="card_text">
                 <p>{{ testimonial.opinion }}</p>
-                <span class="user_info">{{ testimonial.user }}, {{ testimonial.company }}</span>
+                <span class="user_info"
+                  >{{ testimonial.user }}, {{ testimonial.company }}</span
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- /.testimonials section -->
+    <div class="newsletter">
+      <div class="newsletter_submit">
+        <div class="my_container d-flex">
+          <div class="text">
+            <h2>Join our newsletter</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium reprehenderit minima nisi et veniam ipsa odio.
+            </p>
+            <div class="input_group d-flex justify-content-between">
+              <input type="text" placeholder="Insert your email...*" />
+              <div class="button_el">
+                <button class="btn btn-dark">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="articles_preview"></div>
+    </div>
   </main>
 </template>
 
