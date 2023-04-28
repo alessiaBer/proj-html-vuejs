@@ -26,9 +26,9 @@ export default {
             cum iusto adipisci eaque consectetur molestias voluptatibus illum
             similique? Nostrum, et.
           </p>
-          <div class="row row-cols-4">
+          <div class="row row-cols-4 category">
             <div class="col" v-for="category in categories">
-              <div class="my_card">
+              <div class="category_card">
                 <div class="category_card_img">
                   <img :src="category.img" :alt="category.name" />
                 </div>
@@ -36,9 +36,9 @@ export default {
               </div>
             </div>
           </div>
-          <div class="row row-cols-3">
+          <div class="row row-cols-3 food">
             <div class="col" v-for="food in dogFood">
-              <div class="my_card">
+              <div class="food_card">
                 <div class="title">
                   <h3>{{ food.name }}</h3>
                   <span>{{ food.description }}</span>
@@ -46,12 +46,23 @@ export default {
                 <div class="card_img">
                   <img :src="food.img" :alt="food.name">
                 </div>
-                <button class="btn btn_secondary">
+                <button class="btn btn_secondary btn_static">
                   <a href="#" class="link_primary">
                     Shop {{ food.type.toLowerCase() }}
                   </a>
                 </button>
               </div>
+            </div>
+          </div>
+          <div class="new_banner">
+            <div class="text">
+              <span class="find">Find the best animal supplies</span>
+              <h2>New arrivals weekly</h2>
+              <button class="btn_light">
+                <a href="#" class="link_dark">
+                  Learn more about us
+                </a>
+              </button>
             </div>
           </div>
         </div>

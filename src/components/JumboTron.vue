@@ -28,8 +28,8 @@ export default {
     <div class="jumbo-main">
         <div class="my_container">
             <div class="text">
-               <span class="text-uppercase">Find the best animal supplies</span>
-            <h1>We know animals are a part of your family, let us help take care of them.</h1>
+               <span class="find">Find the best animal supplies</span>
+            <h2>We know animals are a part of your family, let us help take care of them.</h2>
             <button class="btn btn_light">
                 <a href="#" class="link_dark">Learn more about us</a>
             </button> 

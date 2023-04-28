@@ -1,27 +1,62 @@
 @use "./variables" as *;
 
 .browse {
-    padding: 4rem 0;
+  padding: 4rem 0;
   .categories {
-    h3 {
+    .category {
+        margin: 3rem 0;
+      h3 {
         color: $secondary;
-    }
-    p {
+      }
+      p {
         margin: 0 auto;
         padding: 0.5rem 0 2.5rem 0;
         width: 60%;
         font-size: 0.8rem;
-    }
-    .my_card {
-      margin: 0 -0.5rem;
-      .category_card_img {
-        img {
-          width: 100%;
+      }
+      .category_card {
+        margin: 0 -0.5rem;
+        .category_card_img {
+          img {
+            width: 100%;
+          }
+        }
+        span {
+          font-size: 0.9rem;
         }
       }
+    }
+  }
+  .food {
+    margin: 0 -0.5rem;
+  }
+  .food_card {
+    margin: 0 -0.5rem;
+    background-color: $secondary;
+    background-size: cover;
+    padding: 0 0 2.5rem 0;
+    .title {
+      background-image: url("https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png");
+      padding: 4rem 0;
+      h3 {
+        color: $primary;
+      }
       span {
-        font-size: 0.9rem;
+        color: $secondary-button;
       }
     }
+    .card_img {
+      margin-top: -1.5rem;
+      background-color: #1e30207e;
+    }
+    button {
+      margin-top: 1rem;
+    }
+  }
+  .new_banner {
+    background-image: url('/src/assets/img/images/banner-3-2x-scaled.jpg');
+    background-size: cover;
+    padding: 6.2rem 0;
+    margin: 4rem 0;
   }
 }
