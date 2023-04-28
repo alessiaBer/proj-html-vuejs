@@ -1,5 +1,6 @@
 <script>
-import { categories, dogFood, bestSellers } from "../data/mainItems";
+import { categories, dogFood, bestSellers } from "../data/products";
+import { userTestimonials } from '../data/testimonials'
 import JumboTron from "./JumboTron.vue";
 export default {
   name: "PageMain",
@@ -11,6 +12,7 @@ export default {
       categories,
       dogFood,
       bestSellers,
+      userTestimonials
     };
   },
 };
@@ -85,7 +87,7 @@ export default {
                     <img :src="product.img" :alt="product.name" />
                   </div>
                   <div class="card_text">
-                    <span class="d-block py-3 product_name">{{
+                    <span class="d-block pt-3 pb-2 product_name">{{
                       product.name
                     }}</span>
                     <div class="price_container">
@@ -100,6 +102,24 @@ export default {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h2>Users testimonials</h2>
+      <div class="my_container">
+        <div class="row row-cols-3">
+          <div class="col" v-for="testimonial in userTestimonials">
+            <div class="my_card">
+              <div class="card_img">
+                <img :src="testimonial.avatar" :alt="testimonial.user">
+              </div>
+              <div class="card_text">
+                <p>{{ testimonial.opinion }}</p>
+                <span class="user_info">{{ testimonial.user }}, {{ testimonial.company }}</span>
               </div>
             </div>
           </div>

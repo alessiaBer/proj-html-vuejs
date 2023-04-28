@@ -47,7 +47,7 @@
     }
     .card_img {
       margin-top: -1.5rem;
-      background-color: #1e30207e;
+      background-color: $secondary-transparent;
     }
     button {
       margin-top: 1rem;
@@ -85,4 +85,35 @@
     }
     
   }
+}
+
+.testimonials {
+    background-color: $secondary;
+    text-align: center;
+    color: $primary;
+    padding-bottom: 5rem;
+    h2 {
+        padding: 5rem 0 4.3rem 0;
+        background-image: url('https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png');
+    }
+    .my_container {
+        background-color: $secondary-transparent;
+        margin-top: -1.5rem;
+    }
+    .card_img {
+        padding-bottom: 2rem; 
+        img {
+            width: 30%;
+           border-radius: 50%; 
+        }
+    }
+    .card_text {
+        p {
+            font-size: 0.8rem;
+        }
+        span {
+            color: $light;
+            font-size: 0.8rem;
+        }
+    }
 }
