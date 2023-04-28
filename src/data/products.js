@@ -70,6 +70,48 @@ const bestSellers = [
     }
 ]
 
+const newProducts = [
+    {
+        name: 'Colored pet bed',
+        price: 18.00,
+        maxPrice: 26.00,
+        discount: false,
+        img: 'https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-8-300x300.jpg'
+    },
+    {
+        name: 'Colorful ball set',
+        price: 29.00,
+        discount: false,
+        img: 'https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-2-300x300.jpg'
+    },
+    {
+        name: 'Dog bone',
+        price: 18.00,
+        discount: true,
+        originalPrice: 29.00,
+        img: 'https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-3-300x300.jpg'
+    },
+    {
+        name: 'Animal transport bag',
+        price: 29.00,
+        discount: false,
+        img: 'https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-4-300x300.jpg'
+    },
+    {
+        name: 'Animal transport cage',
+        price: 35.00,
+        discount: false,
+        img: 'https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-5-300x300.jpg'
+    },
+    {
+        name: 'Closable cat litter',
+        price: 16.00,
+        discount: false,
+        img: 'https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-10-300x300.jpg'
+    }
+]
+
 export {categories}
 export {dogFood}
 export {bestSellers}
+export {newProducts}

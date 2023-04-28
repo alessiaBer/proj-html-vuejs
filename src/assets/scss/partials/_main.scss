@@ -1,5 +1,13 @@
 @use "./variables" as *;
 
+.price_container {
+    color: $secondary-button;
+    font-size: 0.75rem;
+    .original_price {
+      text-decoration: line-through #000;
+    }
+  }
+
 .browse {
   .product_name {
     font-size: 0.9rem;
@@ -74,13 +82,6 @@
     .my_card {
       img {
         width: 100%;
-      }
-      .price_container {
-        color: $secondary-button;
-        font-size: 0.75rem;
-        .original_price {
-          text-decoration: line-through #000;
-        }
       }
     }
   }
@@ -168,7 +169,7 @@
         color: $secondary;
       }
       span {
-        color: $secondary-button;
+        padding-top: 1rem;
       }
     }
     .my_card {
@@ -233,4 +234,15 @@
       }
     }
   }
+}
+
+.new_arrival {
+    text-align: center;
+    padding-bottom: 5rem;
+    .section_title {
+        padding: 3rem 0;
+    }
+    .my_card {
+        padding-bottom: 2rem;
+    }
 }

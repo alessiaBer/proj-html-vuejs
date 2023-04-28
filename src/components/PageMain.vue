@@ -1,5 +1,10 @@
 <script>
-import { categories, dogFood, bestSellers } from "../data/products";
+import {
+  categories,
+  dogFood,
+  bestSellers,
+  newProducts,
+} from "../data/products";
 import { userTestimonials } from "../data/testimonials";
 import { articles } from "../data/articles";
 import JumboTron from "./JumboTron.vue";
@@ -15,6 +20,7 @@ export default {
       bestSellers,
       userTestimonials,
       articles,
+      newProducts,
     };
   },
 };
@@ -156,7 +162,7 @@ export default {
         <div class="my_container">
           <div class="title">
             <h3>Get the best tips & tricks</h3>
-            <span>Recent articles</span>
+            <span class="span">Recent articles</span>
           </div>
           <div class="row row-cols-4">
             <div class="col" v-for="article in articles">
@@ -226,6 +232,36 @@ export default {
                 class="icon"
               />
               <span>All credit card accepted</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="new_arrival">
+      <div class="my_container">
+        <div class="section_title">
+          <h3>New products arrival</h3>
+          <span class="span d-block">Latest products</span>
+        </div>
+        <div class="row row-cols-3">
+          <div class="col" v-for="product in newProducts">
+            <div class="my_card">
+              <div class="card_img">
+                <img :src="product.img" :alt="product.name" />
+              </div>
+              <div class="card_text">
+                <span class="d-block pt-3 pb-2 product_name">{{
+                  product.name
+                }}</span>
+                <div class="price_container">
+                  <span class="original_price" v-if="product.discount === true"
+                    >${{ Number(product.originalPrice).toFixed(2) }}</span
+                  >
+                  <span class="price"
+                    >${{ Number(product.price).toFixed(2) }}</span
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
