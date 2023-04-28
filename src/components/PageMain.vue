@@ -1,5 +1,5 @@
 <script>
-import { categories, dogFood } from "../data/main";
+import { categories, dogFood, bestSellers } from "../data/mainItems";
 import JumboTron from "./JumboTron.vue";
 export default {
   name: "PageMain",
@@ -9,7 +9,8 @@ export default {
   data() {
     return {
       categories,
-      dogFood
+      dogFood,
+      bestSellers,
     };
   },
 };
@@ -32,7 +33,9 @@ export default {
                 <div class="category_card_img">
                   <img :src="category.img" :alt="category.name" />
                 </div>
-                <span class="d-block py-3">{{ category.name }} ({{ category.amount }})</span>
+                <span class="d-block py-3 product_name"
+                  >{{ category.name }} ({{ category.amount }})</span
+                >
               </div>
             </div>
           </div>
@@ -44,7 +47,7 @@ export default {
                   <span>{{ food.description }}</span>
                 </div>
                 <div class="card_img">
-                  <img :src="food.img" :alt="food.name">
+                  <img :src="food.img" :alt="food.name" />
                 </div>
                 <button class="btn btn_secondary btn_static">
                   <a href="#" class="link_primary">
@@ -59,10 +62,46 @@ export default {
               <span class="find">Find the best animal supplies</span>
               <h2>New arrivals weekly</h2>
               <button class="btn_light">
-                <a href="#" class="link_dark">
-                  Learn more about us
-                </a>
+                <a href="#" class="link_dark"> Learn more about us </a>
               </button>
+            </div>
+          </div>
+          <div class="best_sellers">
+            <div class="sellers-top d-flex justify-content-between">
+              <div class="text">
+                <span>All-time best sellers</span>
+                <h3>Item everyone loves</h3>
+              </div>
+              <button class="btn btn_secondary">
+                <a href="#" class="link_primary"> View all products </a>
+              </button>
+            </div>
+            <div class="row row cols-4">
+              <div class="col" v-for="product in bestSellers">
+                <div class="my_card">
+                  <div class="card_img">
+                    <img
+                      :src="product.img"
+                      :alt="product.name"
+                    />
+                  </div>
+                  <div class="card_text">
+                    <span class="d-block py-3 product_name">{{
+                      product.name
+                    }}</span>
+                    <div class="price_container">
+                      <span
+                        class="original_price"
+                        v-if="product.discount === true"
+                        >${{ Number(product.originalPrice).toFixed(2) }}</span
+                      >
+                      <span class="price"
+                        >${{ Number(product.price).toFixed(2) }}</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
