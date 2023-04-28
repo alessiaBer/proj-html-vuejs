@@ -56,6 +56,14 @@ ul {
     padding: 0.5rem 1.3rem;
     &:hover {
         background-color: $secondary-button;
+        color: $primary;
+    }
+    a {
+        color: $darker;
+        text-decoration: none;
+        &:hover {
+            color: $primary;
+        } 
     }
 }
 
@@ -64,6 +72,9 @@ ul {
     border-radius: 20px;
     font-size: 0.8rem;
     padding: 0.5rem 1.3rem !important;
+    &:hover {
+      background-color: $secondary-banner;  
+    }
 }
 
 .btn_static {

@@ -21,6 +21,7 @@ export default {
       userTestimonials,
       articles,
       newProducts,
+      cardHover: false
     };
   },
 };
@@ -90,9 +91,13 @@ export default {
             </div>
             <div class="row row cols-4">
               <div class="col" v-for="product in bestSellers">
-                <div class="my_card">
+                <div class="my_card" @mouseover="product.cardHover = true" @mouseleave="product.cardHover = false">
                   <div class="card_img">
                     <img :src="product.img" :alt="product.name" />
+                    <div class="cart" v-if="product.cardHover === true">
+                      <font-awesome-icon icon="fa-regular fa-square-check" class="icon"/>
+                    </div>
+
                   </div>
                   <div class="card_text">
                     <span class="d-block pt-3 pb-2 product_name">{{

@@ -31,7 +31,7 @@ export default {
                <span class="find">Find the best animal supplies</span>
             <h2>We know animals are a part of your family, let us help take care of them.</h2>
             <button class="btn btn_light">
-                <a href="#" class="link_dark">Learn more about us</a>
+                <a href="#">Learn more about us</a>
             </button> 
             </div>
             
