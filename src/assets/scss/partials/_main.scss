@@ -61,104 +61,176 @@
   }
   .best_sellers {
     .sellers-top {
-        padding-bottom: 3rem;
-        .text {
-            span {
-                color: $secondary-button;
-            }
+      padding-bottom: 3rem;
+      .text {
+        span {
+          color: $secondary-button;
         }
-        .button-view {
-            align-self: center;
-        }
-    }
-    .my_card {
-        img {
-            width: 100%;
-        }
-        .price_container {
-        color: $secondary-button;
-        font-size: 0.75rem;
-      .original_price {
-        text-decoration: line-through #000;
+      }
+      .button-view {
+        align-self: center;
       }
     }
+    .my_card {
+      img {
+        width: 100%;
+      }
+      .price_container {
+        color: $secondary-button;
+        font-size: 0.75rem;
+        .original_price {
+          text-decoration: line-through #000;
+        }
+      }
     }
-    
   }
 }
 
 .testimonials {
-    background-color: $secondary;
-    text-align: center;
-    color: $primary;
-    padding-bottom: 7rem;
-    h2 {
-        padding: 5rem 0 4.3rem 0;
-        background-image: url('https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png');
+  background-color: $secondary;
+  text-align: center;
+  color: $primary;
+  padding-bottom: 7rem;
+  h2 {
+    padding: 5rem 0 4.3rem 0;
+    background-image: url("https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png");
+  }
+  .my_container {
+    background-color: $secondary-transparent;
+    margin-top: -1.5rem;
+  }
+  .card_img {
+    padding-bottom: 2rem;
+    img {
+      width: 30%;
+      border-radius: 50%;
     }
-    .my_container {
-        background-color: $secondary-transparent;
-        margin-top: -1.5rem;
+  }
+  .card_text {
+    p {
+      font-size: 0.8rem;
     }
-    .card_img {
-        padding-bottom: 2rem; 
-        img {
-            width: 30%;
-           border-radius: 50%; 
-        }
+    span {
+      color: $light;
+      font-size: 0.8rem;
     }
-    .card_text {
-        p {
-            font-size: 0.8rem;
-        }
-        span {
-            color: $light;
-            font-size: 0.8rem;
-        }
-    }
+  }
 }
 
 .newsletter {
-    .newsletter_submit {
-        .my_container {
-            background-image: url('/src/assets/img/images/banner-7-2x-scaled.jpg');
+  .newsletter_submit {
+    .my_container {
+      background-image: url("/src/assets/img/images/banner-7-2x-scaled.jpg");
+      background-size: cover;
+      padding: 4rem 0 6rem 3rem;
+      margin-top: -2.5rem;
+      .text {
+        width: 55%;
+        h2 {
+          color: $secondary;
+        }
+        .input_group {
+          width: 100%;
+          input {
+            padding: 0.65rem 0 0.65rem 1rem;
+            border: none;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+            background-color: $lighter;
+            color: $darker;
+            width: 65%;
+          }
+          .button_el {
+            width: 32%;
+          }
+          button {
+            background-color: $secondary-button;
+            border: none;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            padding: 0.65rem 1rem;
+            font-weight: 500;
+            width: 100%;
+            &:hover {
+              background-color: $secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+  .articles_preview {
+    padding-bottom: 2rem;
+    .title {
+      text-align: center;
+      padding-bottom: 3rem;
+      h3 {
+        color: $secondary;
+      }
+      span {
+        color: $secondary-button;
+      }
+    }
+    .my_card {
+      .card_text {
+        padding: 1.5rem 1rem;
+        .date {
+          font-size: 0.75rem;
+        }
+      }
+    }
+    .button_el {
+      text-align: center;
+      padding: 2rem 0;
+    }
+  }
+}
+
+.banner_shipping {
+    .banner_top {
+        width: 100%;
+        .card_overlay_accessories {
+            background-image: url('/src/assets/img/images/banner-8-2x.jpg');
+            width: 50%;
             background-size: cover;
-            padding: 4rem 0 6rem 3rem;
-            margin-top: -2.5rem;
-            .text {
-                width: 55%;
-                h2 {
-                    color: $secondary;
-                }
-                .input_group {
-                    width: 100%;
-                    input {
-                        padding: 0.65rem 0 0.65rem 1rem;
-                        border: none;
-                        border-radius: 20px;
-                        margin-bottom: 1rem;
-                        background-color: $lighter;
-                        color: $darker;
-                        width: 65%;
-                    }
-                    .button_el {
-                        width: 32%;
-                    }
-                    button {
-                        background-color: $secondary-button;
-                        border: none;
-                        border-radius: 20px;
-                        font-size: 0.9rem;
-                        padding: 0.65rem 1rem ;
-                        font-weight: 500;
-                        width: 100%;
-                        &:hover {
-                            background-color: $secondary;
-                        }
-                    }
-                }
-                
+        }
+        .card_overlay_food {
+            background-image: url('/src/assets/img/images/banner-9-2x.jpg');
+            width: 50%;
+            background-size: cover;
+        }
+        .accessories, .food_arrival {
+            background-color: #00000080;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 6rem 0;
+            align-items: center;
+            h3 {
+                color: $primary;
+                padding: 2rem 0;
             }
         }
     }
+  .banner_bottom {
+    color: $primary;
+    background-color: $secondary;
+    background-image: url("https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png");
+    padding-top: 7rem;
+    .row {
+      background-color: $secondary-transparent;
+      .col {
+        text-align: center;
+        padding-bottom: 5rem;
+        .icon {
+          font-size: 4rem;
+        }
+        span {
+          color: $light;
+          display: block;
+          padding-top: 1.5rem;
+        }
+      }
+    }
+  }
 }

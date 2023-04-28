@@ -14,6 +14,9 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faMap } from '@fortawesome/free-regular-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faTruckMoving } from '@fortawesome/free-solid-svg-icons'
+import { faDollarSign } from '@fortawesome/free-solid-svg-icons'
+import { faCreditCard } from '@fortawesome/free-regular-svg-icons'
 /* fontsource */
 import '@fontsource/work-sans/300.css'
 import '@fontsource/work-sans/400.css'
@@ -21,5 +24,5 @@ import '@fontsource/work-sans/500.css'
 import '@fontsource/trocchi/400.css'
 import App from './App.vue'
 
-library.add(faMagnifyingGlass, faUser, faBox, faChevronDown, faFacebookF, faTwitter, faInstagram, faYoutube, faMap, faClock, faCheck)
+library.add(faMagnifyingGlass, faUser, faBox, faChevronDown, faFacebookF, faTwitter, faInstagram, faYoutube, faMap, faClock, faCheck, faTruckMoving, faDollarSign, faCreditCard)
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
