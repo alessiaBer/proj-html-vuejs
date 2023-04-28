@@ -20,6 +20,8 @@ Riprodurre un sito di forniture per animali
    6a) Creo,popolo e stilizzo il componente JumboTron e lo importo nel PageMain
    6b) Essendo il resto del PageMain costituito da molte sezioni, creo staticamente le sezioni e solo durante il refactoring decido se creare più componenti e quali si possono raggruppare
 
+   N.B. nel costruire le sezioni del main cerco il più possibile di servirmi di una struttura dati creata appositamente di modo da non avere troppe ripetizioni nel codice e avere una solida codebase, ma flessibile nel momento in cui vengano inseriti nuovi dati(prodotti, recensioni, articoli..)
+
 **USEFUL DOCUMENTATION:** 
 fontawesome: 'https://fontawesome.com/docs/web/use-with/vue/' ; 
              'https://fontawesome.com/v6/docs/web/use-with/vue/add-icons'
