@@ -60,12 +60,29 @@
     margin: 4rem 0;
   }
   .best_sellers {
-    .price_container {
+    .sellers-top {
+        padding-bottom: 3rem;
+        .text {
+            span {
+                color: $secondary-button;
+            }
+        }
+        .button-view {
+            align-self: center;
+        }
+    }
+    .my_card {
+        img {
+            width: 100%;
+        }
+        .price_container {
         color: $secondary-button;
         font-size: 0.75rem;
       .original_price {
         text-decoration: line-through #000;
       }
     }
+    }
+    
   }
 }

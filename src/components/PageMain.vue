@@ -68,22 +68,21 @@ export default {
           </div>
           <div class="best_sellers">
             <div class="sellers-top d-flex justify-content-between">
-              <div class="text">
-                <span>All-time best sellers</span>
+              <div class="text d-flex flex-column align-items-start">
+                <span class="d-block">All-time best sellers</span>
                 <h3>Item everyone loves</h3>
               </div>
-              <button class="btn btn_secondary">
-                <a href="#" class="link_primary"> View all products </a>
-              </button>
+              <div class="button-view">
+                <button class="btn btn_secondary">
+                  <a href="#" class="link_primary"> View all products </a>
+                </button>
+              </div>
             </div>
             <div class="row row cols-4">
               <div class="col" v-for="product in bestSellers">
                 <div class="my_card">
                   <div class="card_img">
-                    <img
-                      :src="product.img"
-                      :alt="product.name"
-                    />
+                    <img :src="product.img" :alt="product.name" />
                   </div>
                   <div class="card_text">
                     <span class="d-block py-3 product_name">{{
