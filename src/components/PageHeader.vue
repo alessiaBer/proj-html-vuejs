@@ -32,8 +32,7 @@ export default {
             <span><strong>Questions?</strong> Call us : 1.800.123.4567</span>
           </div>
           <div class="personal-area d-flex">
-            <!-- TODO correggere icone -->
-            <font-awesome-icon icon="fa-solid fa-box" class="icon" />
+            <font-awesome-icon icon="fa-solid fa-bag-shopping" />
             <font-awesome-icon icon="fa-regular fa-user" class="icon" />
           </div>
         </nav>
