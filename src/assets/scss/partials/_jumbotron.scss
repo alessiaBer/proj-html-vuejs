@@ -44,15 +44,15 @@
     background-color: $secondary;
     background-image: url('https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png');
     background-repeat: repeat;
-    padding-top: 1.3rem;
     height: 100px;
     .my_container {
+      height: 100%;
         display: flex;
         justify-content: center;
+        align-items: end;
         font-size: 0.75rem;
         img {
             width: 15%;
-            align-self: flex-end;
         }
         .text {
             align-self: center;
