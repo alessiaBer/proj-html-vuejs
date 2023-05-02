@@ -32,8 +32,12 @@ export default {
             <span><strong>Questions?</strong> Call us : 1.800.123.4567</span>
           </div>
           <div class="personal-area d-flex">
-            <font-awesome-icon icon="fa-solid fa-bag-shopping" />
-            <font-awesome-icon icon="fa-regular fa-user" class="icon" />
+            <a href="#">
+              <font-awesome-icon icon="fa-solid fa-bag-shopping" class="icon" />
+            </a>
+            <a href="#">
+              <font-awesome-icon icon="fa-regular fa-user" class="icon" />
+            </a>
           </div>
         </nav>
       </div>
@@ -43,9 +47,11 @@ export default {
       <div class="my_container">
         <nav class="navbar">
           <ul>
-            <li v-for="item in menu" :class="item.active === true ? 'active' : ''">
+            <li v-for="item in menu">
+              <a href="#" :class="item.active === true ? 'active' : ''">
                 {{ item.name }}
                 <font-awesome-icon icon="fa-solid fa-chevron-down" v-if="item.dropdown === true" class="icon"/>
+              </a>
             </li>
           </ul>
         </nav>

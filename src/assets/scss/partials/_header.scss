@@ -33,6 +33,7 @@
   .personal-area {
     .icon {
       padding-left: 0.8rem;
+      color: $darker;
     }
   }
 }
@@ -52,13 +53,21 @@
         margin-bottom: 0;
         li {
           padding: 0 0.8rem;
-          color: $dark;
+          a {
+           color: $dark;
+           text-decoration: none;
           &:not(.active) {
               color: $neutral;
+          } 
+          &:hover {
+            color: $darker;
           }
           .icon {
               font-size: 0.6rem;
           }
+          }
+          
+          
         }
       }
     }
